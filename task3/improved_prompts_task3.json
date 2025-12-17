@@ -1,0 +1,15 @@
+{
+  "analysis_of_original_data": {
+    "sample_size": 100,
+    "common_patterns_found": {
+      "Color adjectives": 7,
+      "Processing terms in ingredients": 20,
+      "Multi-word ingredients": 13,
+      "Fractions in amounts": 1
+    },
+    "data_source": "gemma_annotation.csv"
+  },
+  "improved_ingredient_prompt": "Extract cooking ingredient from German text and output valid JSON.\n\nRULES:\n1. Extract only the main ingredient\n2. Convert to singular nominative form\n3. Remove:\n   - Brand names (Ja!, Dr. Oetker)\n   - Packaging terms (Päckchen, Dose, Glas, Pack)\n   - Processing terms (frisch, getrocknet, gemahlen)\n   - Color adjectives (rot, grün, gelb)\n4. Output format: {\"zutat\": \"INGREDIENT\"}\n\nEXAMPLES:\nInput: \"frische Tomaten\" → {\"zutat\": \"Tomate\"}\nInput: \"rote Paprika\" → {\"zutat\": \"Paprika\"}\nInput: \"1 Päckchen Vanillezucker\" → {\"zutat\": \"Vanillezucker\"}\nInput: \"Ja! Tomatenmark\" → {\"zutat\": \"Tomatenmark\"}\nInput: \"gemahlener Pfeffer\" → {\"zutat\": \"Pfeffer\"}\n\nNow process: {ingredient_text}",
+  "improved_amount_prompt": "Extract measurement from German cooking text and output valid JSON.\n\nRULES:\n1. Identify measurement type:\n   - Weight → use \"gewicht\" (for g, kg, mg)\n   - Volume → use \"volumen\" (for ml, l, el, tl, tasse, becher)\n   - Count → use \"anzahl\" (for Stück, Scheibe, Zehe, Bund)\n2. Always include \"einheit\" with the exact unit\n3. Convert fractions:\n   - 1/2 → 0.5\n   - ½ → 0.5\n   - ¼ → 0.25\n4. Remove approximation terms (ca., etwa, circa)\n\nEXAMPLES:\nInput: \"200 g\" → {\"gewicht\": 200, \"einheit\": \"g\"}\nInput: \"2 EL\" → {\"volumen\": 2, \"einheit\": \"el\"}\nInput: \"1/2 TL\" → {\"volumen\": 0.5, \"einheit\": \"tl\"}\nInput: \"ca. 3 Stück\" → {\"anzahl\": 3, \"einheit\": \"stück\"}\nInput: \"1 ½ Tasse\" → {\"volumen\": 1.5, \"einheit\": \"tasse\"}\n\nNow process: {amount_text}",
+  "reasoning": "Prompts improved to handle common patterns found in cooking ingredient data: fractions, packaging terms, brand names, and approximation terms."
+}

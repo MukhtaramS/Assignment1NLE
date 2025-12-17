@@ -1,0 +1,11 @@
+{
+  "analysis_of_original_data": {
+    "multi_word": 13,
+    "with_adjectives": 7,
+    "with_packaging": 3,
+    "with_processing": 21
+  },
+  "improved_ingredient_prompt": "Extract cooking ingredient from German text.\n\nRules:\n1. Output only the main ingredient in singular form\n2. Remove adjectives (rot, frisch, getrocknet)\n3. Remove brand names\n4. Remove packaging terms (Päckchen, Dose)\n5. Output JSON: {\"zutat\": \"ingredient\"}\n\nExamples:\n\"rote Paprika\" → {\"zutat\": \"Paprika\"}\n\"frische Tomaten\" → {\"zutat\": \"Tomate\"}\n\"1 Päckchen Vanillezucker\" → {\"zutat\": \"Vanillezucker\"}\n\nInput: {text}",
+  "improved_amount_prompt": "Extract measurement from German cooking text.\n\nRules:\n1. Output JSON with correct type:\n   - Weight: {\"gewicht\": value, \"einheit\": \"g\"/\"kg\"}\n   - Volume: {\"volumen\": value, \"einheit\": \"ml\"/\"l\"/\"el\"/\"tl\"}\n   - Count: {\"anzahl\": value, \"einheit\": \"stück\"/\"scheibe\"}\n2. Convert fractions (1/2 → 0.5)\n3. Include unit exactly as written\n\nExamples:\n\"200 g\" → {\"gewicht\": 200, \"einheit\": \"g\"}\n\"2 EL\" → {\"volumen\": 2, \"einheit\": \"el\"}\n\"1/2 TL\" → {\"volumen\": 0.5, \"einheit\": \"tl\"}\n\"3 Stück\" → {\"anzahl\": 3, \"einheit\": \"stück\"}\n\nInput: {text}",
+  "explanation": "Prompts improved to handle common patterns found in cooking data"
+}

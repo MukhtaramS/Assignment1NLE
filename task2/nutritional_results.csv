@@ -1,0 +1,51 @@
+original_ingredient,original_amount,cleaned_ingredient,amount_grams,api_status
+zucchini,1,Zucchini,100.0,error
+paprika rot,2,Paprika,100.0,error
+feta,200 g,Feta,200.0,error
+schinken,250 g,Schinken,250.0,error
+zwiebel frisch,1,Zwiebel,100.0,error
+passierte tomaten,300 g,Tomate,300.0,error
+hähnchenbrust frisch,500 g,Hähnchenbrust,500.0,error
+zwiebel frisch,120 g,Zwiebel,120.0,error
+austernpilze,300 g,Austernpilz,300.0,error
+schmand,1 becher,Schmand,100.0,error
+frischkäse,100 g,Frischkäse,100.0,error
+öl,1 el,Öl,15.0,error
+butter,1 klecks,Butter,100.0,error
+tomatenmark dreifachkonzentriert,1 el,Tomatenmark,15.0,error
+majoran getrocknet,1 tl,Majoran,5.0,error
+bio hähnchenschlegel,4 stk.,Hähnchenschlegel,50.0,error
+hähnchen freilandhaltung,2 stk.,Hähnchen,50.0,error
+rapsöl,1 schuss,Schuss,100.0,error
+zwiebeln grob geschnitten,2 stk.,Zwiebel,50.0,error
+rosenkohl frisch,190 g,Rosenkohl,190.0,error
+snackkarotten,80 g,Karotte,80.0,error
+lauch längs halbiert undgeschnitten,40 g,Lauch,40.0,error
+weißwein trocken,100 ml,Wein,100.0,error
+champignons,150 g,Champignon,150.0,error
+sahne flüssig,200 ml,Sahne,100.0,error
+butter,1 teelöffel,Butter,15.0,error
+mehl,1 teelöffel,Mehl,15.0,error
+frischkäse doppelrahmstufe,150 g,Frischkäse,150.0,error
+milch,2 esslöffel,Milch,15.0,error
+zucker,1 esslöffel,Zucker,15.0,error
+heidelbeeren frisch,1 päckchen,Heidelbeere,100.0,error
+schokoriegel,1 stk.,Schokoriegel,50.0,error
+amarettini mandelkeksezerstoßen,2 esslöffel,Amarettini,15.0,error
+deko schirmchen,2 stk.,Schirmchen,50.0,error
+möhren,200 g,Möhre,200.0,error
+kohlrabi frisch,150 g,Kohlrabi,150.0,error
+paprika rot,2,Paprika,100.0,error
+staudensellerie,150 g,Staudensellerie,150.0,error
+zwiebel frisch,1,Zwiebel,100.0,error
+tomatenmark dreifachkonzentriert,1 tl,Tomatenmark,5.0,error
+chilisoße  sambal oelek ,0.5 tl,Chilisoße,5.0,error
+frischkäse,200 g,Frischkäse,200.0,error
+chicoree,0.5 stk.,Chicoree,50.0,error
+feldsalat,g,Feldsalat,100.0,error
+frischkäse doppelrahmstufe,150 g,Frischkäse,150.0,error
+orange,1 stk.,Orange,50.0,error
+orangenabrieb,1 teelöffel,Teelöffel,15.0,error
+orangensaft frisch gepresst,0.5 frucht,Orangensaft,100.0,error
+zucker,1 teelöffel,Zucker,15.0,error
+spargel konserve,1 glas,Spargel,1.0,error
